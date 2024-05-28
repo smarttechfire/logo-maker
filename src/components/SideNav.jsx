@@ -30,7 +30,7 @@ function SideNav({selectedIndex}) {
         {menuList.map((menu, index) => (
           <h2
             onClick={() => {setActiveIndex(index);selectedIndex(index)}}
-            className= {`p-2 text-lg px-3 text-gray-500 my-0 cursor-pointer flex items-center gap-2 hover:bg-primary hover:text-[#F6ECD9] ${activeIndex==index&&'bg-primary text-white'}`}
+            className= {`p-2 text-lg px-3 text-gray-500 my-1 mx-1 cursor-pointer flex items-center gap-2 hover:bg-primary hover:text-[#F6ECD9] ${activeIndex==index&&'bg-primary text-white'}`}
             key={index}
           >
             <menu.icon />
